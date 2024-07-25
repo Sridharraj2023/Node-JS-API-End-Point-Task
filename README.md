@@ -1,15 +1,34 @@
-#Nodejs- Filesystem
+# File Creation and Listing API
 
-A Node.js application that provides a simple file management system with RESTful API endpoints. Users can create timestamped text files and retrieve a list of existing text files stored in the "Output" directory. The API is documented for easy integration and usage.
+This Node.js Express app provides endpoints for creating text files and listing existing text files.
 
-API Deployment
-The deployed Website: 
+## Installation
 
-API Request
-Create the file of current date and time
-End Point: createTextFile
+1. Clone the repository.
+2. Install dependencies: `npm install`
 
-Get the files from server
-End Point: getTextFile
+## Usage
 
+### Start the Server
+```bash
+npm start
+Use code with caution.
 
+The server will start on port 3000.
+
+API Endpoints
+Create a File
+Endpoint: /createFile
+Method: GET
+Response:
+On success: JSON object with message and filename
+On error: JSON object with error message
+Get Text Files
+Endpoint: /getTextFiles
+Method: GET
+Response:
+JSON object with an array of file names
+Dependencies
+express
+fs
+path
