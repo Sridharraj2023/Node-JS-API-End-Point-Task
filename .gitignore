@@ -1,23 +1,2 @@
 # Node.js-specific
 node_modules/
-npm-debug.log
-yarn-error.log
-
-# Editor-specific (adjust as needed)
-.idea/
-.vscode/
-
-# Logs and temporary files
-logs/
-*.log
-*.tmp
-
-# Test results
-coverage/
-
-# Build output
-/build/
-
-# OS-specific
-.DS_Store
-Thumbs.db
